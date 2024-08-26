@@ -11,12 +11,10 @@ public class Player : MonoBehaviour
     void Start()
     {
         OnPlayerScore(1);
-
-
     }
 
     public void OnPlayerScore(int amount)
     {
-        AudioManager.instance.PlaySound(Sounds.Coin);
+        AudioManager.Instance.PlaySound(Sounds.Coin, 3);
     }
 }
